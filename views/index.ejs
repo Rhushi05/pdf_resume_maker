@@ -31,19 +31,67 @@
       class="container"
       style="
         margin-top: 30px;
+        margin-bottom: 30px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 10px;
       "
     >
-      <form class="row g-3">
+      <form class="row g-3" action="make" method="POST">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" />
+          <label for="inputEmail4" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            name="name1"
+          />
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" />
+          <label for="inputPassword4" class="form-label">Phone no</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+            name="phone"
+          />
         </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Date Of Birth</label>
+          <input
+            type="date"
+            class="form-control"
+            id="inputPassword4"
+            name="dob"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Gender</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              value="female"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              value="male"
+              id="flexRadioDefault2"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Male
+            </label>
+          </div>
+        </div>
+
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address</label>
           <input
@@ -51,42 +99,61 @@
             class="form-control"
             id="inputAddress"
             placeholder="1234 Main St"
-          />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
+            name="Address"
           />
         </div>
         <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity" />
+          <label for="inputCity" class="form-label">Email</label>
+          <input type="text" class="form-control" id="inputCity" name="email" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Linkdin Url</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCity"
+            name="Linkdin"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">About</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+            name="about"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Education</label>
+          <input type="text" name="edu" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Certifications</label>
+          <input type="text" name="certi" class="form-control" id="inputCity" />
         </div>
         <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
+          <label for="inputState" class="form-label">Languages</label>
+          <select id="inputState" class="form-select" name="Languages">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+            <option value="German">German</option>
+            <option value="Japenese">Japenese</option>
           </select>
         </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip" />
+        <div class="col-md-8">
+          <label for="inputCity" class="form-label">Hobbies</label>
+          <input
+            type="text"
+            name="Hobbies"
+            class="form-control"
+            id="inputCity"
+          />
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+        <div class="col-8" style="align-items: center">
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
